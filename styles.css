@@ -1,0 +1,35 @@
+.navbar {
+    display:flex;
+    background-color: #D6001C;
+    color: white;
+    padding: 20px;
+    padding-left: 65px;
+    justify-content: space-evenly;
+    font-size: 40px;
+    align-items: center;
+    font-family: myFont;
+}
+
+@font-face {
+    font-family: myFont;
+    color: white;
+    src: url(./Christmas\ Balloon\ Personal\ Use.otf)
+}
+.container {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: [first] 50% [second] 50% [end];
+    grid-template-rows: [f] auto [s] auto [t] auto [end];;
+}
+.item-1{
+    grid-column: first/second;
+    grid-row: f/s;
+}
+.item-2{
+    grid-column: second/end;
+    grid-row: f/s;
+    text-align: center;
+}
+#h2 {
+    padding: 15px;
+}
