@@ -3,11 +3,16 @@
     background-color: #D6001C;
     color: white;
     padding: 20px;
-    padding-left: 65px;
+    padding-left: 90px;
     justify-content: space-evenly;
     font-size: 40px;
     align-items: center;
     font-family: myFont;
+}
+#hr{
+    height: 3px;  
+    background-color:#D6001C;  
+    border: none;  
 }
 
 @font-face {
@@ -19,11 +24,13 @@
     display: grid;
     padding: 20px;
     grid-template-columns: [first] 50% [second] 50% [end];
-    grid-template-rows: [f] auto [s] auto [t] auto [end];;
+    grid-template-rows: [f] auto [s] auto [t] auto [end];
+    margin-top: 10px;
 }
 .item-1{
     grid-column: first/second;
     grid-row: f/s;
+    margin-right: 15px;
 }
 .item-2{
     grid-column: second/end;
@@ -32,4 +39,79 @@
 }
 #h2 {
     padding: 15px;
+    color: white;
 }
+.con {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: [f] 50% [s] 50% [end];
+    grid-template-rows: [d] auto [r] auto [h] auto [f] auto [end];
+}
+.t-1{
+    grid-column: s/end;
+    grid-row: d/r;
+}
+.t-2{
+    grid-column: f/s;
+    grid-row: d/r; 
+    text-align: center;
+    margin-right: 15px;
+}
+.t-3{
+    grid-column: f/s;
+    grid-row: r/h; 
+}
+.t-4{
+    grid-column: s/end;
+    grid-row: r/h; 
+    text-align: center;
+    margin-right: 15px;
+}
+.t-5{
+    grid-column: s/end;
+    grid-row: h/f; 
+}
+.t-6{
+    grid-column: f/s;
+    grid-row: h/f; 
+    text-align: center;
+    margin-right: 15px;
+}
+.t-7{
+    grid-column: f/s;
+    grid-row: f/end; 
+}
+.t-8{
+    grid-column: s/end;
+    grid-row: f/end; 
+    text-align: center;
+    margin-right: 15px;
+}
+@media (max-width: 479px) {
+    img {
+        width: 100%;
+    }
+}
+.footer {
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#D6001C 
+}
+.gg {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 90px;
+    grid-template-columns: [u] 50% [d] 50% [end];
+    grid-template-rows: [g] auto [l] auto [p] auto [end];
+    gap: 30px;
+}
+.centering {
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
