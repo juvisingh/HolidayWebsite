@@ -65,7 +65,7 @@
     grid-column: s/end;
     grid-row: r/h; 
     text-align: center;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 .t-5{
     grid-column: s/end;
@@ -85,7 +85,7 @@
     grid-column: s/end;
     grid-row: f/end; 
     text-align: center;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 @media (max-width: 479px) {
     img {
